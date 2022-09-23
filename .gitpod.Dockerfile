@@ -1,3 +1,4 @@
 FROM gitpod/workspace-mysql
 
-RUN brew install openjdk@8
+RUN sudo apt-get update \
+    && sudo apt-get install openjdk-8-jdk -y
